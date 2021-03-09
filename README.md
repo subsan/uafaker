@@ -27,8 +27,8 @@ func main() {
     log.Printf("Mobile browser user-agent: %s", mobileUserAgent)
 
     // random only mobile chrome browsers
-    mobileUserAgent := uafaker.Mobile().Chrome().Random()
-    log.Printf("Mobile browser user-agent: %s", mobileUserAgent)
+    mobileChromeUserAgent := uafaker.Mobile().Chrome().Random()
+    log.Printf("Mobile chrome browser user-agent: %s", mobileChromeUserAgent)
 }
 ```
 
