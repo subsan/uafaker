@@ -29,6 +29,10 @@ const (
 	maskBrowsers = 0b111111100000100
 )
 
+func init() {
+	rand.Seed(time.Now().UTC().UnixNano())
+}
+
 type UAFaker struct {
 	filter uint64
 	mask   uint64
@@ -201,13 +205,9 @@ func (f *UAFaker) Yandex() *UAFaker {
 }
 
 func Random() string {
-	rand.Seed(time.Now().UTC().UnixNano())
-
 	return userAgentStorage[rand.Intn(len(userAgentStorage))].userAgent
 }
 func (f *UAFaker) Random() (str string) {
-	rand.Seed(time.Now().UTC().UnixNano())
-
 	var filteredBrowsersIndex []int
 
 	if f.mask == 0 {
