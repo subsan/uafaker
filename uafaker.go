@@ -6,169 +6,216 @@ import (
 )
 
 const (
-	FilterDesktop = 1 << iota // 0b001
-	FilterMobile
-	FilterOS
-	FilterWindows
-	FilterMacOS
-	FilterLinux
-	FilterIOS
-	FilterAndroid
-	FilterChrome
-	FilterFirefox
-	FilterSafari
-	FilterIE
-	FilterEdge
-	FilterOpera
-	FilterYandex
+	filterDesktop = 1 << iota // 0b001
+	filterMobile
+	filterOS
+	filterWindows
+	filterMacOS
+	filterLinux
+	filterIOS
+	filterAndroid
+	filterChrome
+	filterFirefox
+	filterSafari
+	filterIE
+	filterEdge
+	filterOpera
+	filterYandex
+)
+
+const (
+	maskDevice   = 0b000000000000011
+	maskOS       = 0b000000011111000
+	maskBrowsers = 0b111111100000100
 )
 
 type UAFaker struct {
-	filters []uint64
+	filter uint64
+	mask   uint64
 }
 
 func Desktop() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterDesktop}}
-
+	return &UAFaker{
+		filter: filterDesktop,
+		mask:   maskDevice,
+	}
 }
 func (f *UAFaker) Desktop() *UAFaker {
-	f.filters = append(f.filters, FilterDesktop)
+	f.filter = f.filter | filterDesktop
+	f.mask = f.mask | maskDevice
 	return f
 }
 func Mobile() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterMobile}}
-
+	return &UAFaker{
+		filter: filterMobile,
+		mask:   maskDevice,
+	}
 }
 func (f *UAFaker) Mobile() *UAFaker {
-	f.filters = append(f.filters, FilterMobile)
+	f.filter = f.filter | filterMobile
+	f.mask = f.mask | maskDevice
 	return f
 }
 func OS() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterOS}}
-
+	return &UAFaker{
+		filter: filterOS,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) OS() *UAFaker {
-	f.filters = append(f.filters, FilterOS)
+	f.filter = f.filter | filterOS
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func Windows() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterWindows}}
-
+	return &UAFaker{
+		filter: filterWindows,
+		mask:   maskOS,
+	}
 }
 func (f *UAFaker) Windows() *UAFaker {
-	f.filters = append(f.filters, FilterWindows)
+	f.filter = f.filter | filterWindows
+	f.mask = f.mask | maskOS
 	return f
 }
 func MacOS() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterMacOS}}
-
+	return &UAFaker{
+		filter: filterMacOS,
+		mask:   maskOS,
+	}
 }
 func (f *UAFaker) MacOS() *UAFaker {
-	f.filters = append(f.filters, FilterMacOS)
+	f.filter = f.filter | filterMacOS
+	f.mask = f.mask | maskOS
 	return f
 }
 func Linux() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterLinux}}
-
+	return &UAFaker{
+		filter: filterLinux,
+		mask:   maskOS,
+	}
 }
 func (f *UAFaker) Linux() *UAFaker {
-	f.filters = append(f.filters, FilterLinux)
+	f.filter = f.filter | filterLinux
+	f.mask = f.mask | maskOS
 	return f
 }
 func IOS() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterIOS}}
-
+	return &UAFaker{
+		filter: filterIOS,
+		mask:   maskOS,
+	}
 }
 func (f *UAFaker) IOS() *UAFaker {
-	f.filters = append(f.filters, FilterIOS)
+	f.filter = f.filter | filterIOS
+	f.mask = f.mask | maskOS
 	return f
 }
 func Android() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterAndroid}}
-
+	return &UAFaker{
+		filter: filterAndroid,
+		mask:   maskOS,
+	}
 }
 func (f *UAFaker) Android() *UAFaker {
-	f.filters = append(f.filters, FilterAndroid)
+	f.filter = f.filter | filterAndroid
+	f.mask = f.mask | maskOS
 	return f
 }
 func Chrome() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterChrome}}
-
+	return &UAFaker{
+		filter: filterChrome,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) Chrome() *UAFaker {
-	f.filters = append(f.filters, FilterChrome)
+	f.filter = f.filter | filterChrome
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func Firefox() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterFirefox}}
-
+	return &UAFaker{
+		filter: filterFirefox,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) Firefox() *UAFaker {
-	f.filters = append(f.filters, FilterFirefox)
+	f.filter = f.filter | filterFirefox
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func Safari() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterSafari}}
-
+	return &UAFaker{
+		filter: filterSafari,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) Safari() *UAFaker {
-	f.filters = append(f.filters, FilterSafari)
+	f.filter = f.filter | filterSafari
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func IE() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterIE}}
-
+	return &UAFaker{
+		filter: filterIE,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) IE() *UAFaker {
-	f.filters = append(f.filters, FilterIE)
+	f.filter = f.filter | filterIE
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func Edge() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterEdge}}
-
+	return &UAFaker{
+		filter: filterEdge,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) Edge() *UAFaker {
-	f.filters = append(f.filters, FilterEdge)
+	f.filter = f.filter | filterEdge
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func Opera() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterOpera}}
-
+	return &UAFaker{
+		filter: filterOpera,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) Opera() *UAFaker {
-	f.filters = append(f.filters, FilterOpera)
+	f.filter = f.filter | filterOpera
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 func Yandex() *UAFaker {
-	return &UAFaker{filters: []uint64{FilterYandex}}
-
+	return &UAFaker{
+		filter: filterYandex,
+		mask:   maskBrowsers,
+	}
 }
 func (f *UAFaker) Yandex() *UAFaker {
-	f.filters = append(f.filters, FilterYandex)
+	f.filter = f.filter | filterYandex
+	f.mask = f.mask | maskBrowsers
 	return f
 }
 
 func Random() string {
 	rand.Seed(time.Now().UTC().UnixNano())
 
-	return UserAgentStorage[rand.Intn(len(UserAgentStorage))].userAgent
+	return userAgentStorage[rand.Intn(len(userAgentStorage))].userAgent
 }
 func (f *UAFaker) Random() (str string) {
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	var filteredBrowsersIndex []int
-	var filter uint64
 
-	if len(f.filters) == 0 {
-		return UserAgentStorage[rand.Intn(len(UserAgentStorage))].userAgent
+	if f.mask == 0 {
+		return Random()
 	}
 
-	for _, s := range f.filters {
-		filter = filter | s
-	}
-
-	for i, s := range UserAgentStorage {
-		if s.bitmap&filter == filter {
+	for i, s := range userAgentStorage {
+		if (s.bitmap^f.filter)&s.bitmap&f.mask == 0b0 {
 			filteredBrowsersIndex = append(filteredBrowsersIndex, i)
 		}
 	}
@@ -177,5 +224,5 @@ func (f *UAFaker) Random() (str string) {
 		return
 	}
 
-	return UserAgentStorage[filteredBrowsersIndex[rand.Intn(len(filteredBrowsersIndex))]].userAgent
+	return userAgentStorage[filteredBrowsersIndex[rand.Intn(len(filteredBrowsersIndex))]].userAgent
 }

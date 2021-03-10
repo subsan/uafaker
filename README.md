@@ -7,7 +7,6 @@ $ go get github.com/subsan/uafaker
 ```
 
 ## Usage
-
 ``` go
 package main
 
@@ -29,6 +28,16 @@ func main() {
     // random only mobile chrome browsers
     mobileChromeUserAgent := uafaker.Mobile().Chrome().Random()
     log.Printf("Mobile chrome browser user-agent: %s", mobileChromeUserAgent)
+
+    // random only chrome or firefox mobile browsers
+    mobileChromeOrFirefoxUserAgent := uafaker.Chrome().Firefox().Mobile().Random()
+    log.Printf("Chrome or firefox mobile browser user-agent: %s", mobileChromeOrFirefoxUserAgent)
+
+    // generate 20 desktop, windows or linux, chrome or firefox browsers
+    faker := uafaker.Desktop().Windows().Linux().Chrome().Firefox()
+    for i := 0; i < 20; i++ {
+        fmt.Println(faker.Random())
+    }
 }
 ```
 
@@ -43,15 +52,17 @@ req.Header.Set("User-Agent", uafaker.Desktop().Random())
 res, _ := httpClient.Do(req)
 ```
 
-### Allowed filters
+### Available filter groups
+#### Device:
 - Desktop()
 - Mobile()
-- OS()
+#### OS:
 - Windows()
 - MacOS()
 - Linux()
 - IOS()
 - Android()
+#### Browser:
 - Chrome()
 - Firefox()
 - Safari()
@@ -59,3 +70,4 @@ res, _ := httpClient.Do(req)
 - Edge()
 - Opera()
 - Yandex()
+- OS()
