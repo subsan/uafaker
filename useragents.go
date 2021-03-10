@@ -301,7 +301,7 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/windows
 	{
-		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36 Edge/44.19041.4788",
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36 Edg/89.0.774.48",
 		bitmap:    0b1000000001001,
 	},
 	{
@@ -317,6 +317,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000000001001,
 	},
 	// edge/macOS
+	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36 Edg/89.0.774.48",
+		bitmap:    0b1000000010001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36 Edg/89.0.774.45",
 		bitmap:    0b1000000010001,
