@@ -284,6 +284,38 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// chrome/android
 	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; LM-Q710(FGN)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; LM-X420) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; LM-Q720) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-N960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36",
+		bitmap:    0b110000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Linux; Android 10; LM-Q710(FGN)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Mobile Safari/537.36",
 		bitmap:    0b110000010,
 	},
@@ -573,6 +605,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// firefox/windows
 	{
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000001001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0",
 		bitmap:    0b1000001001,
 	},
@@ -605,6 +641,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000001001,
 	},
 	// firefox/macOS
+	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.4; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000010001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.4; rv:91.0) Gecko/20100101 Firefox/91.0",
 		bitmap:    0b1000010001,
@@ -646,6 +686,26 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000010001,
 	},
 	// firefox/linux
+	{
+		userAgent: "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000100001,
+	},
+	{
+		userAgent: "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000100001,
+	},
+	{
+		userAgent: "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000100001,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000100001,
+	},
+	{
+		userAgent: "Mozilla/5.0 (X11; Linux i686; rv:102.0) Gecko/20100101 Firefox/102.0",
+		bitmap:    0b1000100001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:101.0) Gecko/20100101 Firefox/101.0",
 		bitmap:    0b1000100001,
@@ -808,6 +868,18 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// firefox/iOS
 	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/102.0 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.0 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/102.0 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1001000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone OS 12_4 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/101.0 Mobile/15E148 Safari/605.1.15",
 		bitmap:    0b1001000010,
 	},
@@ -880,6 +952,14 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1001000010,
 	},
 	// firefox/android
+	{
+		userAgent: "Mozilla/5.0 (Android 12; Mobile; LG-M255; rv:102.0) Gecko/102.0 Firefox/102.0",
+		bitmap:    0b1010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/102.0",
+		bitmap:    0b1010000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Android 12; Mobile; LG-M255; rv:101.0) Gecko/101.0 Firefox/101.0",
 		bitmap:    0b1010000010,
@@ -1097,6 +1177,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/windows
 	{
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Edg/103.0.1264.44",
+		bitmap:    0b1000000001001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Edge/44.18363.8131",
 		bitmap:    0b1000000001001,
 	},
@@ -1202,6 +1286,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/macOS
 	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Edg/103.0.1264.44",
+		bitmap:    0b1000000010001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Edg/103.0.1264.37",
 		bitmap:    0b1000000010001,
 	},
@@ -1283,6 +1371,22 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000001000010,
 	},
 	// edge/android
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 EdgA/100.0.1185.50",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 EdgA/100.0.1185.50",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 EdgA/100.0.1185.50",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 EdgA/100.0.1185.50",
+		bitmap:    0b1000010000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Mobile Safari/537.36 EdgA/100.0.1185.50",
 		bitmap:    0b1000010000010,
@@ -1623,6 +1727,18 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b10000000100001,
 	},
 	// opera/android
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 OPR/63.3.3216.58675",
+		bitmap:    0b10000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 OPR/63.3.3216.58675",
+		bitmap:    0b10000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 OPR/63.3.3216.58675",
+		bitmap:    0b10000010000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-N975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Mobile Safari/537.36 OPR/63.3.3216.58675",
 		bitmap:    0b10000010000010,
@@ -2035,6 +2151,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b100000001000010,
 	},
 	// yandex/android
+	{
+		userAgent: "Mozilla/5.0 (Linux; arm_64; Android 12; SM-G965F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 YaBrowser/21.3.4.59 Mobile Safari/537.36",
+		bitmap:    0b100000010000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Linux; arm_64; Android 12; SM-G965F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 YaBrowser/21.3.4.59 Mobile Safari/537.36",
 		bitmap:    0b100000010000010,
