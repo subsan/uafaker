@@ -4908,6 +4908,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// yandex/android
 	{
+		userAgent: "Mozilla/5.0 (Linux; arm_64; Android 14; SM-G965F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.82 YaBrowser/24.4.0.308 Mobile Safari/537.36",
+		bitmap:    0b100000010000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Linux; arm_64; Android 14; SM-G965F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.82 YaBrowser/21.3.4.59 Mobile Safari/537.36",
 		bitmap:    0b100000010000010,
 	},
