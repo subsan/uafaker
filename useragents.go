@@ -2406,6 +2406,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// safari/macOS
 	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+		bitmap:    0b10000010001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",
 		bitmap:    0b10000010001,
 	},
@@ -2474,6 +2478,18 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b10000010001,
 	},
 	// safari/iOS
+	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+		bitmap:    0b10001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+		bitmap:    0b10001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+		bitmap:    0b10001000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Mobile/15E148 Safari/604.1",
 		bitmap:    0b10001000010,
@@ -2780,6 +2796,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b100000001001,
 	},
 	// edge/windows
+	{
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.2592.87",
+		bitmap:    0b1000000001001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.2592.81",
 		bitmap:    0b1000000001001,
@@ -3106,6 +3126,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/macOS
 	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.2592.87",
+		bitmap:    0b1000000010001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.2592.81",
 		bitmap:    0b1000000010001,
 	},
@@ -3291,6 +3315,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/iOS
 	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/126.2592.86 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1000001000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/126.2592.78 Mobile/15E148 Safari/605.1.15",
 		bitmap:    0b1000001000010,
 	},
@@ -3451,6 +3479,22 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000001000010,
 	},
 	// edge/android
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36 EdgA/126.0.2592.80",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36 EdgA/126.0.2592.80",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36 EdgA/126.0.2592.80",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36 EdgA/126.0.2592.80",
+		bitmap:    0b1000010000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36 EdgA/125.0.2535.96",
 		bitmap:    0b1000010000010,
@@ -5490,6 +5534,18 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b100000000010001,
 	},
 	// yandex/iOS
+	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 YaBrowser/24.6.3.424 Mobile/15E148 Safari/605.1",
+		bitmap:    0b100000001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 YaBrowser/24.6.3.424 Mobile/15E148 Safari/605.1",
+		bitmap:    0b100000001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 YaBrowser/24.6.3.424 Mobile/15E148 Safari/604.1",
+		bitmap:    0b100000001000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 YaBrowser/24.6.3.424 Mobile/15E148 Safari/605.1",
 		bitmap:    0b100000001000010,
