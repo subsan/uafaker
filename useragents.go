@@ -2718,6 +2718,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// safari/macOS
 	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
+		bitmap:    0b10000010001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
 		bitmap:    0b10000010001,
 	},
@@ -2798,6 +2802,18 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b10000010001,
 	},
 	// safari/iOS
+	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
+		bitmap:    0b10001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
+		bitmap:    0b10001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Mobile/15E148 Safari/604.1",
+		bitmap:    0b10001000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
 		bitmap:    0b10001000010,
@@ -3754,6 +3770,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000000010001,
 	},
 	// edge/iOS
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/128.2739.72 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1000001000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/128.2739.60 Mobile/15E148 Safari/605.1.15",
 		bitmap:    0b1000001000010,
@@ -6490,6 +6510,18 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b100000000010001,
 	},
 	// yandex/iOS
+	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 YaBrowser/24.7.6.701 Mobile/15E148 Safari/605.1",
+		bitmap:    0b100000001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 YaBrowser/24.7.6.701 Mobile/15E148 Safari/605.1",
+		bitmap:    0b100000001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 YaBrowser/24.7.6.701 Mobile/15E148 Safari/604.1",
+		bitmap:    0b100000001000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 YaBrowser/24.7.6.701 Mobile/15E148 Safari/605.1",
 		bitmap:    0b100000001000010,
