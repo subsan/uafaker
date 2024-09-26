@@ -5241,6 +5241,14 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// opera/windows
 	{
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/114.0.0.0",
+		bitmap:    0b10000000001001,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/114.0.0.0",
+		bitmap:    0b10000000001001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0",
 		bitmap:    0b10000000001001,
 	},
@@ -5514,6 +5522,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// opera/macOS
 	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/114.0.0.0",
+		bitmap:    0b10000000010001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0",
 		bitmap:    0b10000000010001,
 	},
@@ -5674,6 +5686,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b10000000010001,
 	},
 	// opera/linux
+	{
+		userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/114.0.0.0",
+		bitmap:    0b10000000100001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 OPR/113.0.0.0",
 		bitmap:    0b10000000100001,
