@@ -6819,6 +6819,18 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// yandex/iOS
 	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 YaBrowser/24.7.9.430 Mobile/15E148 Safari/605.1",
+		bitmap:    0b100000001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 YaBrowser/24.7.9.430 Mobile/15E148 Safari/605.1",
+		bitmap:    0b100000001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 YaBrowser/24.7.9.430 Mobile/15E148 Safari/604.1",
+		bitmap:    0b100000001000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 YaBrowser/24.7.9.389 Mobile/15E148 Safari/605.1",
 		bitmap:    0b100000001000010,
 	},
