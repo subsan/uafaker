@@ -3505,6 +3505,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/windows
 	{
+		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.2903.63",
+		bitmap:    0b1000000001001,
+	},
+	{
 		userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edge/44.18363.8131",
 		bitmap:    0b1000000001001,
 	},
@@ -3953,6 +3957,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000000001001,
 	},
 	// edge/macOS
+	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.2903.63",
+		bitmap:    0b1000000010001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.2903.51",
 		bitmap:    0b1000000010001,
@@ -4463,6 +4471,22 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1000001000010,
 	},
 	// edge/android
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.81 Mobile Safari/537.36 EdgA/131.0.2903.48",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; Pixel 3 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.81 Mobile Safari/537.36 EdgA/131.0.2903.48",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.81 Mobile Safari/537.36 EdgA/131.0.2903.48",
+		bitmap:    0b1000010000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.81 Mobile Safari/537.36 EdgA/131.0.2903.48",
+		bitmap:    0b1000010000010,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Linux; Android 10; ONEPLUS A6003) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.81 Mobile Safari/537.36 EdgA/130.0.2849.80",
 		bitmap:    0b1000010000010,
