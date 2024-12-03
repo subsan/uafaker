@@ -4303,6 +4303,10 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// edge/iOS
 	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/131.2903.77 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1000001000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 EdgiOS/131.2903.68 Mobile/15E148 Safari/605.1.15",
 		bitmap:    0b1000001000010,
 	},
