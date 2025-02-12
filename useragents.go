@@ -471,6 +471,18 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// chrome/iOS
 	{
+		userAgent: "Mozilla/5.0 (iPod; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/133.0.6943.84 Mobile/15E148 Safari/604.1",
+		bitmap:    0b101000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/133.0.6943.84 Mobile/15E148 Safari/604.1",
+		bitmap:    0b101000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/133.0.6943.84 Mobile/15E148 Safari/604.1",
+		bitmap:    0b101000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (iPod; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/133.0.6943.33 Mobile/15E148 Safari/604.1",
 		bitmap:    0b101000010,
 	},
@@ -2692,6 +2704,18 @@ var userAgentStorage = []userAgentStorageItem{
 	},
 	// firefox/iOS
 	{
+		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_7_4 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/135.0 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPad; CPU OS 14_7_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/135.0 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1001000010,
+	},
+	{
+		userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/135.0 Mobile/15E148 Safari/605.1.15",
+		bitmap:    0b1001000010,
+	},
+	{
 		userAgent: "Mozilla/5.0 (iPod touch; CPU iPhone OS 14_7_3 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/135.0 Mobile/15E148 Safari/605.1.15",
 		bitmap:    0b1001000010,
 	},
@@ -3301,6 +3325,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b1010000010,
 	},
 	// safari/macOS
+	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15",
+		bitmap:    0b10000010001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15",
 		bitmap:    0b10000010001,
@@ -6661,6 +6689,10 @@ var userAgentStorage = []userAgentStorageItem{
 		bitmap:    0b10000000001001,
 	},
 	// opera/macOS
+	{
+		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/116.0.0.0",
+		bitmap:    0b10000000010001,
+	},
 	{
 		userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 OPR/116.0.0.0",
 		bitmap:    0b10000000010001,
